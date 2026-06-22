@@ -61,10 +61,6 @@ body{
     margin-bottom:8px;
 }
 
-.subtitle{
-    color:#b8b8b8;
-    margin-bottom:25px;
-}
 
 /* Input */
 .input-box{
@@ -85,21 +81,6 @@ body{
 .input-box input:focus{
     background:#475569;
     box-shadow:0 0 0 2px #ff3b5c;
-}
-
-/* Options */
-.options{
-    display:flex;
-    justify-content:space-between;
-    align-items:center;
-    margin-bottom:20px;
-    font-size:14px;
-    color:#ddd;
-}
-
-.options a{
-    color:#ff3b5c;
-    text-decoration:none;
 }
 
 /* Login Button */
