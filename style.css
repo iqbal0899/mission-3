@@ -1,0 +1,200 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+body{
+    min-height:100vh;
+    background:
+    url("bioskop.jpg")
+    center/cover no-repeat;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    position:relative;
+}
+
+/* Dark Overlay */
+.overlay{
+    position:absolute;
+    inset:0;
+    background:rgba(0,0,0,.7);
+}
+
+/* Main Container */
+.container{
+    width:100%;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    padding:20px;
+    position:relative;
+    z-index:1;
+}
+
+/* Login Card */
+.login-card{
+    width:100%;
+    max-width:420px;
+    background:rgba(17,24,39,.85);
+    backdrop-filter:blur(15px);
+    padding:40px;
+    border-radius:25px;
+    border:1px solid rgba(255,255,255,.1);
+    box-shadow:0 20px 50px rgba(0,0,0,.4);
+}
+
+.logo{
+    text-align:center;
+    margin-bottom:20px;
+}
+
+.logo h1{
+    color:white;
+    font-size:2rem;
+    font-weight:700;
+}
+
+.logo span{
+    color:#ff3b5c;
+}
+
+.login-card h2{
+    color:white;
+    margin-bottom:8px;
+}
+
+.subtitle{
+    color:#b8b8b8;
+    margin-bottom:25px;
+}
+
+/* Input */
+.input-box{
+    margin-bottom:15px;
+}
+
+.input-box input{
+    width:100%;
+    padding:15px;
+    border:none;
+    border-radius:12px;
+    background:#374151;
+    color:white;
+    outline:none;
+    transition:.3s;
+}
+
+.input-box input:focus{
+    background:#475569;
+    box-shadow:0 0 0 2px #ff3b5c;
+}
+
+/* Options */
+.options{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    margin-bottom:20px;
+    font-size:14px;
+    color:#ddd;
+}
+
+.options a{
+    color:#ff3b5c;
+    text-decoration:none;
+}
+
+/* Login Button */
+button{
+    border:none;
+    cursor:pointer;
+}
+
+form button{
+    width:100%;
+    padding:15px;
+    border-radius:12px;
+    background:linear-gradient(
+        135deg,
+        #ff3b5c,
+        #ff6b81
+    );
+    color:white;
+    font-size:16px;
+    font-weight:600;
+    transition:.3s;
+}
+
+form button:hover{
+    transform:translateY(-2px);
+}
+
+/* Divider */
+.divider{
+    text-align:center;
+    margin:25px 0;
+    color:#999;
+    position:relative;
+}
+
+.divider::before,
+.divider::after{
+    content:"";
+    position:absolute;
+    top:50%;
+    width:40%;
+    height:1px;
+    background:#444;
+}
+
+.divider::before{
+    left:0;
+}
+
+.divider::after{
+    right:0;
+}
+
+/* Google Button */
+.google-btn{
+    width:100%;
+    padding:14px;
+    border-radius:12px;
+    background:#ffffff;
+    color:#333;
+    font-weight:600;
+}
+
+/* Register */
+.register{
+    text-align:center;
+    margin-top:20px;
+    color:#bbb;
+}
+
+.register a{
+    color:#ff3b5c;
+    text-decoration:none;
+    font-weight:600;
+}
+
+/* Responsive */
+@media (max-width:480px){
+
+    .login-card{
+        padding:25px;
+    }
+
+    .options{
+        flex-direction:column;
+        gap:10px;
+        align-items:flex-start;
+    }
+
+    .logo h1{
+        font-size:1.6rem;
+    }
+}
