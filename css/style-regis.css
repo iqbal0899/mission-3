@@ -8,7 +8,7 @@
 body{
     min-height:100vh;
     background:
-    url("bioskop.jpg")
+    url("/asset/bioskop.jpg")
     center/cover no-repeat;
     display:flex;
     justify-content:center;
