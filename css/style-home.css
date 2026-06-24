@@ -44,11 +44,15 @@ body{
     transition:.3s;
 }
 
+#menu-toggle{
+    display: none;
+}
+
 .nav-links a:hover{
     color:#ff355d;
 }
 
-.btn-login{
+.btn-user{
     border:none;
     padding:15px;
     border-radius:100px;
@@ -143,6 +147,12 @@ body{
     transform:scale(1.05);
 }
 
+.volume-option{
+    margin-top:30px;
+    display:inline;
+    gap:15px;
+}
+
 .volume-btn{
     width:50px;
     height:50px;
@@ -165,7 +175,7 @@ body{
 }
 
 .volume-btn:hover{
-    background:rgba(0, 0, 0, 0);
+    transform:scale(1.1);
 }
 
 /* Sections */
@@ -280,6 +290,13 @@ footer{
     margin-bottom:10px;
 }
 
+.footer-left img{
+    width:50px;
+    height:auto;
+    display:block;
+    margin-bottom:20px;
+}
+
 .footer-left p{
     color:#999;
     font-size:14px;
@@ -352,22 +369,38 @@ footer{
     }
 
     .hero-content h1{
-        font-size:2.5rem;
+        font-size:10px;
     }
 
     .hero-content p{
-        font-size:1rem;
+        font-size:5px;
+        margin-right: 100px;
     }
 
     .hero-btn{
-        flex-direction:column;
-        width:100%;
+        display:contents;
+        justify-content: space-between;
+        align-items: center;
+        width:5%;
+        border-radius:100%;
     }
 
     .watch-btn,
     .info-btn{
-        width:100%;
+        flex: 1 1 180px;
+        text-align: center;
     }
+
+    .play-btn{
+        flex: 1 1 80px;
+        text-align: center;
+        margin-top: 5px;
+    }
+
+    .volume-btn{
+        display:none;
+    }
+
     .movie-section h2{
         font-size:24px;
     }
